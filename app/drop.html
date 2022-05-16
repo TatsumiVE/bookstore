@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery Slide-Menu</title>
+	<style>
+		.box {
+			font-family: arial;
+			width: 220px;
+			border: 1px solid #a22;
+			padding: 1px;
+			margin-bottom: 8px;
+		}
+		.box h3 {
+			color: #fff;
+			background: #c22;
+			padding: 8px;
+			margin: 0;
+			cursor: pointer;
+		}
+		.box h3.up {
+			color: #d99;
+		}
+		.box a {
+			color: #900;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h3>Products</h3>
+		<ul>
+			<li><a href="#">Icon Pack</a></li>
+			<li><a href="#">Texture Set</a></li>
+			<li><a href="#">Design Template</a></li>
+		</ul>
+	</div>
+	<div class="box">
+		<h3>Services</h3>
+		<ul>
+			<li><a href="#">Web Design</a></li>
+			<li><a href="#">Logo Design</a></li>
+			<li><a href="#">Web Development</a></li>
+		</ul>
+	</div>
+	<div class="box">
+		<h3>Connect</h3>
+		<ul>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Google+</a></li>
+		</ul>
+	</div>
+	
+	<script src="jquery.js"></script>
+	<script>
+		$("h3").click(function() {
+			var parent = $(this).parent();
+			$("ul", parent).slideToggle("fast");
+			$(this).toggleClass("up");
+		});
+	</script>
+</body>
+</html>

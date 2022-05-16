@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p> Hello world</p>
+<button>button</button>
+<a href="#">Link Button</a>
+<script type="jquery.js"></script>
+<script>
+	$('button').click(function(){
+		//$('p').html('Hello');
+		//$('p').text('Hello');
+		//$('p').append('Hello');
+		$('p').prepend('Hello');
+
+		
+		$('p').css({
+			'background':'yellow',
+			'border':2px solid red,
+			'padding':'10px'
+		});
+	});
+	$('a').click(function() {
+	//	$('p').toggle('slow');
+	$('p').fadeOut('slow',function(){
+		$(this).fadeIn('slow');
+	});
+	});
+</script>
+</body>
+</html>

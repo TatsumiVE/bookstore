@@ -1,0 +1,255 @@
+body{
+	margin: 30px;
+	color: white;
+	font-size: 1.2vw;
+	font-family: sans-serif;
+	background-color: white;
+
+}
+
+#head{
+	width: 80%;
+	height: 70px;
+	box-shadow: 7px 7px 5px black;
+	background-color: brown;
+
+
+}
+#title{
+	width: 30%;
+	float: left;
+	font-size: 2.3vw;
+	line-height: 70px;
+	text-align: center;
+	color: black;
+	
+
+}
+#nav{
+	width: 70%;
+	float: right;
+	height: 70px;
+}
+#nav ul,#category ul {
+	margin: 0;
+	list-style-type: none;
+}
+.nav a, .category a{
+	display: block;
+	color: white;
+	height: 100%;
+	text-decoration: none;
+}
+a:hover{
+	background-color: rgba(0,0,0,0.3);
+
+}
+.nav{
+	float: left;
+	margin-left: 20px;
+	width: 15%;
+	text-align: center;
+	line-height: 70px;
+	display: inline-block;
+
+}
+#content{
+	
+	width: 75%;
+	height: 93%;
+	
+}
+/*slide------------*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+.search {
+	margin-top: 20px;
+}
+.search input[type=text] {
+	width: 180px;
+	margin-left: 8px;
+}
+.search input[type=submit] {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(images/search.png) no-repeat center center;
+	border: 0 none;
+	padding: 0;
+	margin: 0 0 0 -5px;
+}
+	#category{
+		margin-top: 2px;
+		margin-left: 160px;
+		float: left;
+		width: 25%;
+		height: 93%;
+		background-color: brown;
+		border-radius: 25px;
+	}
+	#wrap{
+		height: 93%;
+		width: 100%;
+	}
+	.main{
+	height: 93%;
+	width: 50%;
+	float: left;
+	background-color: white;
+	color: black;
+	border-radius: 25px;
+	}
+	#footer{
+		clear: both;
+		background-color: black;
+		margin-left: 160px;
+		width: 75%;
+	}
+	#category ul{
+		height: 100%;
+		padding: 0;
+	}
+	.category{
+		height: 3.7%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: block;
+		line-height: 200%;
+	}
+	.category a{
+		padding-left: 10%;
+	}
+
+
+.categories_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.categories_list li {
+	padding: 0;
+	margin: 0;
+}
+
+.categories_list li a {
+	display: block;
+	color: white;
+	margin-left: 30px;
+	text-decoration: none;
+	padding: 5px 0 5px 20px;
+	background: url(images/list.png) center left no-repeat;
+}
+.categories_list li a:hover {
+	color: #e37615;
+	text-decoration: none;
+}
+.feedback{
+		margin-top: 2px;
+		margin-left: 128px;
+		float: left;
+		width: 80%;
+		height: 93%;
+		background-color: white;
+		color: black;
+		
+	}
+	.bestseller{
+		margin-top: 2px;
+		margin-left: 128px;
+		float: left;
+		width: 80%;
+		height: 93%;
+		background-color: white;
+		color: black;
+		
+	}
+	.book_detail{
+		margin-top: 2px;
+		margin-left: 128px;
+		float: left;
+		width: 80%;
+		height: 93%;
+		background-color: white;
+		color: black;
+		
+	}
+	#view{
+		margin-top: 2px;
+		margin-left: 128px;
+		float: left;
+		width: 80%;
+		height: 93%;
+		background-color: white;
+		color: black;
+		
+	}
+	/*..............................*/
+
+
+	

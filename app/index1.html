@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<ul></ul>
+<input type="text">
+<button>+</button>
+	<script src="jquery.js"></script>
+	<script>
+		var data=JSON.parse(localStorage.getItem('data')) || [];
+		data.map(function(item){
+			$('<li>').html(item).appendTo('ul');
+		});
+
+		$('button').click(function(){
+			var text=$('input').val();
+			$('<li>').html(text).appendTo('ul');
+			save(text);
+		});
+		
+			function save(text){
+				var data=JSON.parse(localStorage.getItem('data')) || [];
+				data.push(text);
+				localStorage.setItem('data',JSON.stringify(data));
+			}
+	</script>
+</body>
+</html>

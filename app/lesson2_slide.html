@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>ToDo List</h1>
+<ul id="task"></ul>
+<div id="new">
+	<input type="text" name="">
+	<button>+</button>
+</div>
+<script src="jquery.js"></script>
+<script>
+	$('button').click(function(){
+		var text=$('#new input').val();
+		var li=$('<li>').html(text);
+		$('#task').append(li);
+	})
+	</script>
+</body>
+</html>
